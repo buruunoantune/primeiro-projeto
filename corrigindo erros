@@ -1,0 +1,27 @@
+let heroi = [
+  { nome: "kratos", xp: 10111 }
+];
+
+for (let i = 0; i < heroi.length; i++) {
+  let nomeHeroi = heroi[i].nome;
+  let xpHeroi = heroi[i].xp;
+  let nivel = ""
+
+  if (xpHeroi <= 1000) {
+    nivel = "ferro";
+  } else if (xpHeroi <= 2000) {
+    nivel = "bronze";
+  } else if (xpHeroi <= 5000) {
+    nivel = "prata";
+  } else if (xpHeroi <= 7000) {
+    nivel = "ouro";
+  } else if (xpHeroi <= 8000) {
+    nivel = "platina";
+  } else if (xpHeroi <= 10000) {
+    nivel = "imortal";
+  } else {
+    nivel = "radiante";
+  }
+ 
+console.log(`O herói ${nomeHeroi} está no nível ${nivel}`);
+}
